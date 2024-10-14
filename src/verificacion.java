@@ -20,9 +20,9 @@ public class verificacion {
 
     }
 
-    public static boolean verificarFrase(String frase, String fraseIngresada){
+    public static boolean verificar(String v1, String v2){
 
-        if(frase.equals(fraseIngresada)){
+        if(v1.equals(v2)){
 
             return true;
         }else{
@@ -33,20 +33,5 @@ public class verificacion {
 
     }
 
-    public static boolean verificarPalabra(String palabra, String palabraIngresada){
-
-        if (palabra.equals(palabraIngresada)) {
-
-            return true;
-
-            //System.out.println("¡Correcto! Te tomó " + tiempoTotal + " milisegundos.");
-        } else {
-
-            return false;
-
-            //System.out.println("Incorrecto. La palabra correcta era: " + palabra);
-        }
-
-    }
 
 }
