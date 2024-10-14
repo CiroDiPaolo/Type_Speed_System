@@ -4,6 +4,8 @@ public class verificacion {
 
         if (respuestaStr.equals("n")) {
 
+            System.out.println("Adios");
+
             return false;
 
         } else if (respuestaStr.equals("s")) {

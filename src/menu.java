@@ -1,6 +1,27 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class menu {
+
+    public static int opcion(){
+
+        Scanner sc = new Scanner(System.in);
+
+        int op = 0;
+
+            try{
+
+                op = sc.nextInt();
+
+            }catch(InputMismatchException e){
+
+                System.out.println("Ingrese un número entero");
+
+            }
+
+        return op;
+
+    }
 
     public static void menuPrincipal(){
 
@@ -28,9 +49,13 @@ public class menu {
 
         System.out.print("Ingrese su opcion =>");
 
+        menuOpciones();
+
     }
 
-    public static void menuOpciones(int opcion){
+    public static void menuOpciones(){
+
+        int opcion = menu.opcion();
 
         switch(opcion){
 
